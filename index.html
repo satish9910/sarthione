@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1 SarthiOne - IT Agency & Digital Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><span>S</span><span>1</span></div>
+                <div class="logo-text">Sarthi<span class="text-primary">One</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="text-primary">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <i class="fa-solid fa-moon" style="color: white; cursor: pointer;"></i>
+                <a href="tel:+918076650048" class="btn btn-primary navbar-btn" style="text-decoration: none;"><i class="fa-solid fa-calendar-check"></i> Book a
+                    Call</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Animated Background Orbs -->
+        <div class="hero-bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up" style="animation-delay: 0.1s;">
+                    🚀 IT SOLUTIONS THAT DRIVE GROWTH
+                </div>
+                <h1 class="hero-title animate-fade-up" style="animation-delay: 0.2s;">
+                    Empowering Your Vision With <br>
+                    <span class="text-primary">Next-Gen IT Solutions</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-up" style="animation-delay: 0.3s;">
+                    We specialize in delivering bespoke digital products, advanced web & mobile applications, and
+                    strategic IT consulting to turn your ideas into reality.
+                </p>
+
+                <div class="hero-action animate-fade-up" style="animation-delay: 0.4s;">
+                    <a href="#services" class="btn-primary-lg">
+                        Start a Project <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-outline"
+                        style="padding: 16px 32px; border-radius: 12px; font-size: 16px; border-color: rgba(255,255,255,0.2);">
+                        View Our Work <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-fade-left" style="animation-delay: 0.5s;">
+                <div class="visual-wrapper">
+                    <!-- Dashboard Image -->
+                    <img src="images/analytics.png" alt="Platform Dashboard" class="main-visual-img"
+                        onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'"
+                        style="border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+
+                    <!-- Floating Tech Cards -->
+                    <div class="float-card float-card-1">
+                        <div class="float-icon"><i class="fa-brands fa-react"></i></div>
+                        <div class="float-info">
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                    <div class="float-card float-card-2">
+                        <div class="float-icon" style="color: #10B981; background: rgba(16,185,129,0.1);"><i
+                                class="fa-brands fa-node-js"></i></div>
+                        <div class="float-info">
+                            <h4>Node.js</h4>
+                        </div>
+                    </div>
+                    <div class="float-card float-card-3">
+                        <div class="float-icon" style="color: #A855F7; background: rgba(168,85,247,0.1);"><i
+                                class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div class="float-info">
+                            <h4>AI Powered</h4>
+                        </div>
+                    </div>
+                    <div class="float-card float-card-4">
+                        <div class="float-icon" style="color: #4DB33D; background: rgba(77,179,61,0.1);"><i
+                                class="fa-solid fa-leaf"></i></div>
+                        <div class="float-info">
+                            <h4>MongoDB</h4>
+                        </div>
+                    </div>
+                    <div class="float-card float-card-5">
+                        <div class="float-icon" style="color: #FF9900; background: rgba(255,153,0,0.1);"><i
+                                class="fa-brands fa-aws"></i></div>
+                        <div class="float-info">
+                            <h4>AWS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section" style="background: var(--bg-main);">
+        <div class="container">
+            <div class="services-header animate-on-scroll fade-up">
+                <div>
+                    <span class="section-subtitle">WHAT WE DO</span>
+                    <h2 class="section-title">Full-stack IT services, <span class="text-primary">one partner</span>.
+                    </h2>
+                </div>
+                <p class="section-desc">From idea to deployment, we deliver scalable, secure, and high-performance
+                    solutions tailored to your business.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card animate-on-scroll fade-up">
+                    <div class="service-icon" style="background: rgba(37,99,235,0.1); color: #2563EB;"><i
+                            class="fa-solid fa-code"></i></div>
+                    <div class="service-content">
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive, and SEO-friendly web applications built with the latest technologies.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card animate-on-scroll fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon" style="background: rgba(139,92,246,0.1); color: #8B5CF6;"><i
+                            class="fa-solid fa-mobile-screen"></i></div>
+                    <div class="service-content">
+                        <h3>Mobile App Development</h3>
+                        <p>Native and cross-platform mobile apps that deliver great performance and user experience.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card animate-on-scroll fade-up">
+                    <div class="service-icon" style="background: rgba(16,185,129,0.1); color: #10B981;"><i
+                            class="fa-solid fa-robot"></i></div>
+                    <div class="service-content">
+                        <h3>AI & Automation</h3>
+                        <p>AI-powered solutions and automation to streamline processes and boost productivity.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card animate-on-scroll fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon" style="background: rgba(245,158,11,0.1); color: #F59E0B;"><i
+                            class="fa-solid fa-cloud"></i></div>
+                    <div class="service-content">
+                        <h3>Cloud & DevOps</h3>
+                        <p>Scalable cloud infrastructure, CI/CD pipelines, and DevOps to ship faster and more reliably.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card animate-on-scroll fade-up">
+                    <div class="service-icon" style="background: rgba(236,72,153,0.1); color: #EC4899;"><i
+                            class="fa-solid fa-pen-nib"></i></div>
+                    <div class="service-content">
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design that combines creativity and usability to delight your users.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card animate-on-scroll fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon" style="background: rgba(14,165,233,0.1); color: #0EA5E9;"><i
+                            class="fa-solid fa-bullhorn"></i></div>
+                    <div class="service-content">
+                        <h3>Digital Marketing</h3>
+                        <p>SEO, social media, and performance marketing strategies to grow your online presence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background: var(--bg-main);">
+        <div class="container">
+            <div class="projects-header animate-on-scroll fade-up">
+                <div>
+                    <span class="section-subtitle">FEATURED PROJECTS</span>
+                    <h2 class="section-title">Projects we're <span class="text-primary">proud of.</span></h2>
+                </div>
+                <a href="#" class="btn btn-outline" style="color: var(--primary); border-color: transparent;">View all
+                    projects <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll fade-up">
+                    <div class="project-img">
+                        <span class="project-tag">Web App</span>
+                        <img src="images/saas.png" alt="Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>SaaS Dashboard Platform</h3>
+                        <p>A complete SaaS solution for managing business operations and analytics.</p>
+                        <div class="project-footer">
+                            <span class="project-tech">React.js, Node.js, MongoDB</span>
+                            <a href="#" class="project-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll fade-up" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <span class="project-tag" style="background: #8B5CF6;">Mobile App</span>
+                        <img src="images/mobile.png" alt="Mobile App">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Mobile App</h3>
+                        <p>Cross-platform mobile app with smooth UI/UX and secure payments.</p>
+                        <div class="project-footer">
+                            <span class="project-tech">Flutter, Firebase, Node.js</span>
+                            <a href="#" class="project-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll fade-up" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <span class="project-tag" style="background: #10B981;">Web App</span>
+                        <img src="images/analytics.png" alt="Analytics">
+                    </div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time analytics dashboard for tracking and visualizing key metrics.</p>
+                        <div class="project-footer">
+                            <span class="project-tech">React, Python, AWS</span>
+                            <a href="#" class="project-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid animate-on-scroll fade-up">
+                <div class="stat-item">
+                    <div class="stat-icon" style="background: rgba(37,99,235,0.2); color: #2563EB;"><i
+                            class="fa-solid fa-folder-open"></i></div>
+                    <div class="stat-info">
+                        <h3>150+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon" style="background: rgba(139,92,246,0.2); color: #8B5CF6;"><i
+                            class="fa-solid fa-medal"></i></div>
+                    <div class="stat-info">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon" style="background: rgba(236,72,153,0.2); color: #EC4899;"><i
+                            class="fa-solid fa-users"></i></div>
+                    <div class="stat-info">
+                        <h3>40+</h3>
+                        <p>Active Clients</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon" style="background: rgba(244,63,94,0.2); color: #F43F5E;"><i
+                            class="fa-solid fa-headset"></i></div>
+                    <div class="stat-info">
+                        <h3>24x7</h3>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section process-section" style="background: var(--bg-main);">
+        <div class="container">
+            <span class="section-subtitle">OUR PROCESS</span>
+            <h2 class="section-title">Simple steps, powerful results.</h2>
+
+            <div class="process-timeline animate-on-scroll fade-up">
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="step-num">01</div>
+                    <h4>Discover</h4>
+                    <p>We understand your business and goals.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-map"></i></div>
+                    <div class="step-num">02</div>
+                    <h4>Plan</h4>
+                    <p>We plan the roadmap and strategy.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <div class="step-num">03</div>
+                    <h4>Design</h4>
+                    <p>We design intuitive and engaging UI/UX.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="step-num">04</div>
+                    <h4>Develop</h4>
+                    <p>We build robust and scalable solutions.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-bug"></i></div>
+                    <div class="step-num">05</div>
+                    <h4>Test</h4>
+                    <p>We ensure quality and performance.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="step-num">06</div>
+                    <h4>Launch & Support</h4>
+                    <p>We deploy and provide ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack / Technologies Section -->
+    <section class="section tech-stack-section" style="background: var(--bg-main);">
+        <div class="container">
+            <span class="section-subtitle" style="font-size: 12px;">TECHNOLOGIES WE USE</span>
+
+            <div class="tech-pills animate-on-scroll fade-up">
+                <div class="tech-pill"><i class="fa-brands fa-react" style="color: #61DAFB;"></i> React</div>
+                <div class="tech-pill"><span style="font-weight: 800; margin-right: 4px;">N</span> Next.js</div>
+                <div class="tech-pill"><i class="fa-brands fa-node" style="color: #68A063;"></i> Node.js</div>
+                <div class="tech-pill"><i class="fa-solid fa-leaf" style="color: #4DB33D;"></i> MongoDB</div>
+                <div class="tech-pill"><i class="fa-brands fa-aws" style="color: #FF9900;"></i> AWS</div>
+                <div class="tech-pill"><i class="fa-brands fa-docker" style="color: #2496ED;"></i> Docker</div>
+                <div class="tech-pill"><i class="fa-solid fa-database" style="color: #DC382D;"></i> Redis</div>
+                <div class="tech-pill"><i class="fa-brands fa-php" style="color: #777BB4;"></i> PHP</div>
+                <div class="tech-pill"><i class="fa-brands fa-laravel" style="color: #FF2D20;"></i> Laravel</div>
+                <div class="tech-pill"><i class="fa-brands fa-wordpress" style="color: #21759B;"></i> WordPress</div>
+                <div class="tech-pill"><i class="fa-solid fa-wind" style="color: #38B2AC;"></i> Tailwind CSS</div>
+                <div class="tech-pill"><i class="fa-brands fa-python" style="color: #3776AB;"></i> Python</div>
+                <div class="tech-pill"><i class="fa-solid fa-wand-magic-sparkles" style="color: #8B5CF6;"></i> AI Tools
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <span class="section-subtitle">WHAT OUR CLIENTS SAY</span>
+            <h2 class="section-title">Trusted by businesses worldwide.</h2>
+
+            <div class="testimonials-grid animate-on-scroll fade-up">
+                <!-- Testimonial 1 -->
+                <div class="testi-card">
+                    <i class="fa-solid fa-quote-left testi-quote"></i>
+                    <p class="testi-text">"SarthiOne delivered a robust platform that exceeded our expectations. Their
+                        team is professional, responsive, and highly skilled."</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-author">
+                        <div class="testi-author-info">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Rahul">
+                            <div>
+                                <h4>Rahul Sharma</h4>
+                                <p>CEO, TechMart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testi-card">
+                    <i class="fa-solid fa-quote-left testi-quote"></i>
+                    <p class="testi-text">"Excellent communication, on-time delivery, and great technical expertise.
+                        Highly recommended for any IT project."</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-author">
+                        <div class="testi-author-info">
+                            <img src="https://i.pravatar.cc/100?img=47" alt="Priya">
+                            <div>
+                                <h4>Priya Verma</h4>
+                                <p>Founder, HealthPlus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testi-card">
+                    <i class="fa-solid fa-quote-left testi-quote"></i>
+                    <p class="testi-text">"The dashboard they built for us helped us make data-driven decisions and grow
+                        our business exponentially."</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="testi-author">
+                        <div class="testi-author-info">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Amit">
+                            <div>
+                                <h4>Amit Patel</h4>
+                                <p>Director, FinEdge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Sections (FAQ & CTA) -->
+    <section class="bottom-sections">
+        <div class="container">
+            <!-- FAQ -->
+            <div class="faq-container animate-on-scroll fade-up">
+                <div class="faq-left">
+                    <span class="section-subtitle" style="margin-bottom: 20px;">FREQUENTLY ASKED QUESTIONS</span>
+                    <h2 class="section-title" style="color: white;">Answers to common <span
+                            class="text-primary">questions.</span></h2>
+                    <!-- Abstract graphic for FAQ -->
+                    <div class="faq-graphic">
+                        <i class="fa-solid fa-comments"></i>
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <div class="faq-question">What services do you offer? <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="faq-answer">We offer full-stack web and mobile development, AI integration, cloud
+                            solutions (AWS/Azure), UI/UX design, digital marketing, and ongoing maintenance.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How long does a project take? <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="faq-answer">Project timelines vary depending on complexity. A simple website might
+                            take 2-4 weeks, while a complex custom platform could take 3-6 months.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do you provide post-launch support? <i
+                                class="fa-solid fa-arrow-right"></i></div>
+                        <div class="faq-answer">Yes, we offer ongoing maintenance and support packages to ensure your
+                            application remains secure, up-to-date, and performs optimally.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is your pricing model? <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="faq-answer">We offer flexible pricing models including fixed-price for well-defined
+                            projects and time-and-materials for ongoing or flexible scopes.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box animate-on-scroll fade-up">
+                <div class="cta-content">
+                    <span class="section-subtitle" style="color: rgba(255,255,255,0.8); margin-bottom: 10px;">READY TO
+                        START?</span>
+                    <h2>Let's build something amazing together.</h2>
+                    <p>Have an idea or project in mind? Let's discuss how we can help you turn it into a successful
+                        digital product.</p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="tel:+918076650048" class="btn" style="background: white; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">Book a Free Call <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="mailto:sarthione0@gmail.com" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Get a
+                            Quote</a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/rocket-4993652-4161741.png" alt="Rocket"
+                        style="width: 250px; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphic Divider -->
+    <div style="width: 100%; overflow: hidden; line-height: 0; background: var(--bg-dark);">
+        <svg style="display: block; width: 100%; height: 60px;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C50.63,22.86,108.62,44.49,169.19,53.48,220.48,61.1,271.8,65.65,321.39,56.44Z" style="fill: #050811;"></path>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" style="position: relative; overflow: hidden;">
+        <!-- Floating Graphics -->
+        <div style="position: absolute; top: -10px; right: 5%; opacity: 0.15; animation: floating 6s ease-in-out infinite;">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-4993649-4161738.png" alt="Graphic" style="width: 180px;">
+        </div>
+        <div style="position: absolute; bottom: 20%; left: 3%; opacity: 0.1; animation: floating 8s ease-in-out infinite reverse;">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/target-4993655-4161744.png" alt="Graphic" style="width: 140px;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="footer-grid">
+                <div style="grid-column: span 2;">
+                    <a href="#" class="logo" style="margin-bottom: 20px;">
+                        <div class="logo-icon" style="font-size: 28px;"><span>S</span><span
+                                style="font-size: 22px;">1</span></div>
+                        <div class="logo-text" style="font-size: 20px;">Sarthi<span class="text-primary">One</span>
+                        </div>
+                    </a>
+                    <p style="font-size: 14px; max-width: 250px; margin-bottom: 20px;">We build digital products that
+                        help businesses innovate, automate, and grow faster.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-title">Services</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile App Development</a></li>
+                        <li><a href="#">AI & Automation</a></li>
+                        <li><a href="#">Cloud & DevOps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">Contact</div>
+                    <ul class="footer-links">
+                        <li><a href="mailto:sarthione0@gmail.com"><i class="fa-solid fa-envelope"></i> sarthione0@gmail.com</a></li>
+                        <li><a href="tel:+918076650048"><i class="fa-solid fa-phone"></i> +91 80766 50048</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Gurugram, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SarthiOne. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('menu-active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navbar.classList.contains('menu-active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('i');
+                const isVisible = answer.style.display === 'block';
+
+                // Close all
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                document.querySelectorAll('.faq-question i').forEach(i => {
+                    i.style.transform = 'rotate(0deg)';
+                });
+
+                if (!isVisible) {
+                    answer.style.display = 'block';
+                    icon.style.transform = 'rotate(90deg)';
+                }
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach((elem) => {
+            observer.observe(elem);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
